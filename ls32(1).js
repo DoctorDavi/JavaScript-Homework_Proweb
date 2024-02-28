@@ -3,8 +3,8 @@ let arr = []; // конечный массив
 do {
   var userAnswer = prompt('Введите команду'); // строка которая содержит данные пользователя
 
-  // Повторится пока пользователь не введет 'stop' или нажмет Esc
-  if (userAnswer == 'stop' || userAnswer === null) {
+  // Повторится пока пользователь не введет 'stop', нажмет Esc или введет пустую строку
+  if (userAnswer == 'stop' || userAnswer === null || userAnswer == '') {
     break;
   }
 

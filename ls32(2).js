@@ -2,9 +2,19 @@ function vowels(str) {
   let total = 0; // количество гласных
 
   for (const letter of str.toLowerCase()) {
-    if (letter == 'а' || letter == 'у' || letter == 'о' || letter == 'и' || letter == 'э'
-      || letter == 'ы' || letter == 'я' || letter == 'ю' || letter == 'е' || letter == 'ё') {
-      total += 1;
+    switch (letter) {
+      case 'а':
+      case 'у':
+      case 'о':
+      case 'и':
+      case 'э':
+      case 'ы':
+      case 'я':
+      case 'ю':
+      case 'е':
+      case 'ё':
+        total += 1;
+        break;
     }
   }
 
